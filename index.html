@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autenticación con Twilio</title>
+</head>
+<body>
+    <h1>Autenticación con Twilio</h1>
+    <form action="verify_phone.php" method="POST">
+        <label for="phone">Número de teléfono:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+52 123 456 7890" required>
+        <label for="method">Método de autenticación:</label>
+        <select id="method" name="method">
+            <option value="sms">Mensaje de Texto (SMS)</option>
+            <option value="whatsapp">WhatsApp</option>
+        </select>
+        <button type="submit">Enviar código de verificación</button>
+    </form>
+</body>
+</html>
+
+
